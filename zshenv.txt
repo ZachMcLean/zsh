@@ -1,0 +1,21 @@
+# Speedy Keys
+xset r rate 210 40
+
+# Environment variables set everywhere
+export EDITOR="vim"
+export TERMINAL="alacritty"
+export BROWSER="firefox"
+export SHELL="zsh"
+
+# # XDG PATHS
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
+# ~/ Clean-up:
+export LESSHISTFILE="-"
+export ZDOTDIR=$HOME/.config/zsh
+
+# Pfetch Settings
+export PF_SEP=":"
+export PF_INFO="ascii title os kernel wm editor shell pkgs memory"
