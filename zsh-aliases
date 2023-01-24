@@ -1,0 +1,17 @@
+#!/bin/sh
+# alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d exec test -e '{}/.git' ';' -print0 | xargs -I -0 git -C {} pull -q"
+# alias nvimrc='nvim ~/.config/nvim/'
+#
+alias zsh="cd $ZDOTDIR"
+alias dwm="cd $HOME/suckless/dwm"
+alias v="cd $XDG_CONFIG_HOME/nvim"
+alias c="$HOME/code"
+alias bin="cd $HOME/bin"
+alias vim="nvim"
+alias hm="cd ~"
+
+alias ghtoken='cat $HOME/bin/token.txt'
+
+alias rm='rm -i'
+
+alias ls='ls -la --color=auto'
