@@ -9,8 +9,10 @@ alias c="$HOME/code"
 alias bin="cd $HOME/bin"
 alias vim="nvim"
 alias hm="cd ~"
+alias token="xclip -i -sel cat ~/.local/bin/token.txt"
+alias tmux-start="$HOME/.local/bin/dev-tmux.sh"
 
-alias ghtoken='cat $HOME/bin/token.txt'
+alias ghtoken='cat $HOME/.local/bin/token.txt'
 
 alias rm='rm -i'
 
