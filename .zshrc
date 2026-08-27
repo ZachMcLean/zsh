@@ -49,4 +49,3 @@ bindkey '^e' edit-command-line
 
 #pfetch
 pfetch
-$HOME/bin/startup
