@@ -1,20 +1,25 @@
-# Speedy Keys
-xset r rate 210 40
-
 # Environment variables set everywhere
-export EDITOR="vim"
-export TERMINAL="alacritty"
-export BROWSER="firefox"
-export SHELL="zsh"
+export EDITOR="nvim"
+export VISUAL="nvim"
+
+if [[ -n $DISPLAY ]]; then
+  # Speedy Keys
+  command -v xset >/dev/null && xset r rate 210 40
+  export TERMINAL="ghostty"
+  export BROWSER="firefox"
+fi
 
 # # XDG PATHS
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 
+typeset -U path PATH 
+path=("$HOME/.local/bin" $path)
+
 # ~/ Clean-up:
 export LESSHISTFILE="-"
-export ZDOTDIR=$HOME/.config/zsh
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 # Pfetch Settings
 export PF_SEP=":"

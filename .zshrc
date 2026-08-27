@@ -5,12 +5,11 @@ export ZDOTDIR=$HOME/.config/zsh
 autoload -U colors && colors
 
 #append
-path+=('$HOME/.local/bin')
 export PATH
 #History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.cache/zsh/history
+HISTFILE="$XDG_CACHE_HOME/zsh/history"
 
 # Basic auto/tab complete
 autoload -U compinit
