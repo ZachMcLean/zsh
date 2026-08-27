@@ -1,11 +1,8 @@
 # Zach's config file for the Zoomer Shell
-#!/bin/sh
-export ZDOTDIR=$HOME/.config/zsh
+
 # enable colors and change prompt
 autoload -U colors && colors
 
-#append
-export PATH
 #History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
@@ -48,4 +45,4 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 #pfetch
-pfetch
+command -v pfetch >/dev/null && pfetch

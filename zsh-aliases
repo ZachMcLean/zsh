@@ -5,14 +5,11 @@
 alias zsh="cd $ZDOTDIR"
 alias dwm="cd $HOME/suckless/dwm"
 alias v="cd $XDG_CONFIG_HOME/nvim"
-alias c="$HOME/code"
 alias bin="cd $HOME/bin"
 alias vim="nvim"
 alias hm="cd ~"
-alias token="xclip -i -sel cat ~/.local/bin/token.txt"
 # alias tmux-start="$HOME/.local/bin/dev-tmux.sh"
 # [[ -x $HOME/.local/bin/dev-tmux.sh ]] && alias tmux-start="$HOME/.local/bin/dev-tmux.sh" || alias tmux-start="$HOME/bin/dev-tmux.sh"
-alias ghtoken='cat $HOME/.local/bin/token.txt'
 
 alias rm='rm -i'
 
